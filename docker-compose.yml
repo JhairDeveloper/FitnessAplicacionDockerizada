@@ -6,7 +6,7 @@ services:
       context: ./pis-5to
       dockerfile: Dockerfile
     ports:
-      - "8080:3000"
+      - "7000:7000"
     container_name: frontpis5to
     environment:
       - NODE_ENV=production
@@ -16,7 +16,7 @@ services:
       context: ./api-pis5to
       dockerfile: Dockerfile
     ports:
-      - "3001:3001"
+      - "3000:3000"
     container_name: backendpist5to
     environment:
       - NODE_ENV=production
